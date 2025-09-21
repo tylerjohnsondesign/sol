@@ -1,0 +1,15 @@
+jQuery(document).ready(function($) {
+
+    // Slick.js.
+    $('.sol-slider__container').slick({
+        dots: true,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        infinite: true,
+        speed: 750,
+        fade: true,
+        cssEase: 'linear'
+    });
+
+});

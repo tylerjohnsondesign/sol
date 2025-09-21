@@ -1,0 +1,98 @@
+/**
+ * Post Slider Block Styles.
+ * @since   1.0.0
+ */
+.sol-post-slider {
+    position: relative;
+    height: 100%;
+
+    .sol-post-slider__cover {
+        position: absolute;
+        z-index: 1;
+    }
+
+    .sol-post-slider__cover-br {
+        bottom: -9px;
+        right: -4px;
+    }
+
+    .sol-post-slider__cover-tr {
+        top: -4px;
+        right: -5px;
+    }
+
+    .sol-post-slider__cover-bl {
+        bottom: -9px;
+        left: -4px;
+    }
+
+    .sol-post-slider__cover-tl {
+        top: -4px;
+        left: -4px;
+    }
+
+    .sol-post-slider__slide {
+        min-height: 350px;
+        height: 100%;
+        background-size: cover !important;
+    }
+
+    a.sol-post-slider__slide-link {
+        display: flex;
+        align-items: flex-end;
+        padding: 30px;
+        height: 100%;
+        box-sizing: border-box;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    .sol-post-slider__slide-content {
+        display: block;
+        width: 100%;
+    }
+
+    span.sol-post-slider__slide-button {
+        display: inline-block;
+        background: #F12D12;
+        padding: 10px 30px;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+    }
+
+    .sol-post-slider__container,
+    .slick-list.draggable,
+    .slick-track,
+    .slick-slide > div {
+        height: 100%;
+    }
+
+    .sol-post-slider__container.slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
+
+    .sol-post-slider__container ul.slick-dots {
+        bottom: 25px;
+        z-index: 1;
+        text-align: right;
+        padding: 0 45px;
+
+        li {
+            margin: 0;
+        }
+    }
+
+    .sol-post-slider__container .slick-dots li button:before {
+        color: #fff;
+        font-size: 10px;
+    }
+
+}

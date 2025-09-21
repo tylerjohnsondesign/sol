@@ -1,0 +1,86 @@
+.sol-slider__container {
+  position: relative;
+}
+.sol-slider__container .sol-slider-align__center {
+  justify-content: center;
+  text-align: center;
+}
+.sol-slider__container .sol-slider-align__right {
+  justify-content: flex-end;
+  text-align: right;
+}
+.sol-slider__container .sol-slider__slide {
+  height: calc(80vh - 95px);
+  min-height: 600px;
+}
+.sol-slider__container ul.slick-dots {
+  position: absolute;
+  bottom: 15px;
+  left: 30px;
+  max-width: calc(100% - 60px);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.sol-slider__container ul.slick-dots li {
+  margin: 0;
+}
+.sol-slider__container ul.slick-dots li button:before {
+  font-size: 10px;
+  color: #fff;
+}
+.sol-slider__container .slick-arrow {
+  position: absolute;
+  right: 35px;
+  left: unset;
+  top: unset;
+  bottom: 15px;
+  z-index: 1;
+}
+.sol-slider__container .slick-prev {
+  right: 65px;
+}
+.sol-slider__container .sol-slider__slide-inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 45px;
+}
+.sol-slider__container h2.sol-slider__slide-title {
+  margin: 0;
+  font-size: clamp(24px, 5vw, 40px);
+  text-shadow: 2px 2px 6px #000;
+}
+.sol-slider__container .sol-slider__slide-text {
+  font-size: clamp(16px, 5vw, 20px);
+  text-shadow: 2px 2px 6px #000;
+}
+.sol-slider__container .sol-slider__slide-content {
+  opacity: 0;
+}
+.sol-slider__container .slick-active .sol-slider__slide-content {
+  animation: fadeInUp 1.5s ease both;
+  animation-delay: 0.5s;
+}
+.sol-slider__container .slick-active .sol-slider__slide {
+  animation: zoomIn 5.5s linear both !important;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes zoomIn {
+  from {
+    background-size: 100%;
+  }
+  to {
+    background-size: 110%;
+  }
+}

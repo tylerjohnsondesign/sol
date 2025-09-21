@@ -1,0 +1,17 @@
+/**
+ * Logo Slider Block Styles.
+ * @since   1.0.0
+ */
+.sol-logo-slider {
+    // Add your block styles here.
+    &__container {
+        // Container styles.
+
+        .slick-track {
+            display: flex;
+            align-items: center;
+            grid-gap: 50px;
+        }
+
+    }
+}

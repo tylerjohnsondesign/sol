@@ -1,0 +1,8 @@
+/**
+ * NRSS Feed Block JavaScript.
+ * @since   1.0.0
+ */
+jQuery(document).ready(function($) {
+    // Add your block JavaScript here.
+    console.log('Block rss-feed initialized.');
+});

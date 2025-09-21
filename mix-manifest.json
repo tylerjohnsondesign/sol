@@ -1,0 +1,12 @@
+{
+    "/blocks/logo-slider/assets/logo-slider.min.js": "/blocks/logo-slider/assets/logo-slider.min.js",
+    "/blocks/post-slider/assets/post-slider.min.js": "/blocks/post-slider/assets/post-slider.min.js",
+    "/blocks/rss-feed/assets/rss-feed.min.js": "/blocks/rss-feed/assets/rss-feed.min.js",
+    "/blocks/slider/assets/slider.min.js": "/blocks/slider/assets/slider.min.js",
+    "/dist/main.js": "/dist/main.js",
+    "/dist/main.css": "/dist/main.css",
+    "/blocks/slider/assets/slider.min.css": "/blocks/slider/assets/slider.min.css",
+    "/blocks/rss-feed/assets/rss-feed.min.css": "/blocks/rss-feed/assets/rss-feed.min.css",
+    "/blocks/post-slider/assets/post-slider.min.css": "/blocks/post-slider/assets/post-slider.min.css",
+    "/blocks/logo-slider/assets/logo-slider.min.css": "/blocks/logo-slider/assets/logo-slider.min.css"
+}

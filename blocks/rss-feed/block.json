@@ -1,0 +1,46 @@
+{
+    "apiVersion": 2,
+    "version": "1.0.0",
+    "name": "acf/rss-feed",
+    "title": "RSS Feed",
+    "description": "Load in an RSS feed.",
+    "category": "design",
+    "icon": "admin-generic",
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "rss-feed.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align": true,
+        "ariaLabel": true,
+        "background": {
+            "backgroundImage": true,
+            "backgroundSize": true
+        },
+        "className": true,
+        "color": {
+            "background": true,
+            "button": true,
+            "heading": true,
+            "link": true,
+            "text": true
+        },
+        "html": false,
+        "shadow": true,
+        "spacing": {
+            "margin": true,
+            "padding": true,
+            "blockGap": true
+        },
+        "typography": {
+            "fontSize": true,
+            "lineHeight": true,
+            "textAlign": true
+        }
+    },
+    "attributes": {
+        "style": { "type": "object" }
+    }
+}
