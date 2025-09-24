@@ -74,4 +74,13 @@ jQuery(document).ready(function($) {
         });
     }
 
+    // Mobile menu.
+    $('#mobile-menu button.menu-toggle').on('click', function() {
+        // Toggle class.
+        $('body').toggleClass('mobile-menu-open');
+        // Change aria-expanded.
+        var expanded = $(this).attr('aria-expanded') === 'true' || false;
+        $(this).attr('aria-expanded', !expanded);
+    });
+
 });

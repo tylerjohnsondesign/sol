@@ -36,7 +36,6 @@
 					</a>
 				</div>
 				<nav id="site-navigation" class="main-navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">+</button>
 					<div class="header-nav"><?php
 						wp_nav_menu(
 							array(
@@ -48,6 +47,19 @@
 						<a href="/" class="sol-search-btn">
 							<?php include SOL_PATH . 'assets/search.svg'; ?>
 						</a>
+					</div>
+					<div id="mobile-site-social"><?php
+
+						// Loop.
+						foreach( get_field( 'social_networks', 'options' ) as $network ) { 
+
+							// Output. ?>
+							<a href="<?php echo $network['link']; ?>" target="_blank" rel="noopener">
+								<?php include SOL_PATH . 'assets/' . $network['network'] . '.svg'; ?>
+							</a><?php
+
+						} ?>
+
 					</div>
 				</nav>
 				<div id="site-social"><?php
@@ -62,6 +74,9 @@
 
 					} ?>
 
+				</div>
+				<div id="mobile-menu">
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">+</button>
 				</div>
 			</div>
 			<div class="site-bradlee">
