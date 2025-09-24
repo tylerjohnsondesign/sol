@@ -14,6 +14,21 @@
     .sol-slider__slide {
         height: calc(80vh - 95px);
         min-height: 600px;
+        position: relative;
+    }
+
+    .sol-slider__slide-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .sol-slider__slide-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     ul.slick-dots {
@@ -75,8 +90,25 @@
         animation-delay: 0.5s;
     }
 
-    .slick-active .sol-slider__slide {
+    .slick-active .sol-slider__slide-image img  {
         animation: zoomIn 5.5s linear both !important;
+    }
+
+    a.sol-slider__slide-button {
+        background: #F12D12;
+        font-weight: bold;
+        font-size: 20px;
+        display: inline-block;
+        padding: 10px 15px;
+        border-radius: 25px;
+        min-width: 150px;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover {
+            background: #fff;
+            color: #F12D12;
+        }
     }
 }
 
@@ -94,10 +126,10 @@
 
 @keyframes zoomIn {
     from {
-        background-size: 100%;
+        transform: scale(1);
     }
 
     to {
-        background-size: 110%;
+        transform: scale(1.15);
     }
 }

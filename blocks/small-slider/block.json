@@ -1,0 +1,46 @@
+{
+    "apiVersion": 2,
+    "version": "1.0.0",
+    "name": "acf/small-slider",
+    "title": "Small Slider",
+    "description": "A small image slider.",
+    "category": "design",
+    "icon": "admin-generic",
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "small-slider.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align": true,
+        "ariaLabel": true,
+        "background": {
+            "backgroundImage": true,
+            "backgroundSize": true
+        },
+        "className": true,
+        "color": {
+            "background": true,
+            "button": true,
+            "heading": true,
+            "link": true,
+            "text": true
+        },
+        "html": false,
+        "shadow": true,
+        "spacing": {
+            "margin": true,
+            "padding": true,
+            "blockGap": true
+        },
+        "typography": {
+            "fontSize": true,
+            "lineHeight": true,
+            "textAlign": true
+        }
+    },
+    "attributes": {
+        "style": { "type": "object" }
+    }
+}

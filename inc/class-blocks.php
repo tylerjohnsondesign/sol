@@ -73,6 +73,7 @@ class blocks {
         // Define blocks.
         $blocks = [
             // Add blocks.
+            'small-slider',
             'logo-slider',
             'rss-feed',
             'post-slider',

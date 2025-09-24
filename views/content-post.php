@@ -8,7 +8,6 @@
  */
 
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-content"><?php
 
@@ -22,7 +21,15 @@
 		the_content();
 		
 		// Share buttons.
-		echo do_shortcode( '[sharenow]' ); ?>
+		echo do_shortcode( '[sharenow]' );
+		
+		// Navigation.
+		the_post_navigation(
+			array(
+				'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'test' ) . '</span> <span class="nav-title">%title</span>',
+				'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'test' ) . '</span> <span class="nav-title">%title</span>',
+			)
+		); ?>
 
 	</div><?php
 

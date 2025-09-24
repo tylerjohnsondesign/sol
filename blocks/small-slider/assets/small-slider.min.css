@@ -1,0 +1,93 @@
+/**
+ * Post Slider Block Styles.
+ * @since   1.0.0
+ */
+.sol-small-slider {
+  position: relative;
+  height: 100%;
+}
+.sol-small-slider .sol-small-slider__cover {
+  position: absolute;
+  z-index: 1;
+}
+.sol-small-slider .sol-small-slider__cover-br {
+  bottom: -9px;
+  right: -4px;
+}
+.sol-small-slider .sol-small-slider__cover-tr {
+  top: -4px;
+  right: -5px;
+}
+.sol-small-slider .sol-small-slider__cover-bl {
+  bottom: -9px;
+  left: -4px;
+}
+.sol-small-slider .sol-small-slider__cover-tl {
+  top: -4px;
+  left: -4px;
+}
+.sol-small-slider .sol-small-slider__slide {
+  min-height: 350px;
+  height: 100%;
+  background-size: cover !important;
+}
+.sol-small-slider .sol-small-slider__overlay {
+  background: #000000;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(255, 255, 255, 0) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.sol-small-slider .sol-small-slider__slide-link {
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+}
+.sol-small-slider .sol-small-slider__slide-link:hover {
+  color: #fff;
+}
+.sol-small-slider .sol-small-slider__slide-content {
+  display: block;
+  width: 100%;
+}
+.sol-small-slider span.sol-small-slider__slide-button {
+  display: inline-block;
+  background: #F12D12;
+  padding: 10px 30px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+.sol-small-slider span.sol-small-slider__slide-button:hover {
+  transform: translateY(-3px);
+}
+.sol-small-slider .sol-small-slider__container,
+.sol-small-slider .slick-list.draggable,
+.sol-small-slider .slick-track,
+.sol-small-slider .slick-slide > div {
+  height: 100%;
+}
+.sol-small-slider .sol-small-slider__container.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+.sol-small-slider .sol-small-slider__container ul.slick-dots {
+  bottom: 25px;
+  z-index: 1;
+  text-align: right;
+  padding: 0 45px;
+}
+.sol-small-slider .sol-small-slider__container ul.slick-dots li {
+  margin: 0;
+}
+.sol-small-slider .sol-small-slider__container .slick-dots li button:before {
+  color: #fff;
+  font-size: 10px;
+}

@@ -17,7 +17,10 @@ $attrs = get_block_wrapper_attributes( blocks::get_args( $block ) ); ?>
         // Loop through slides.
         foreach( get_field( 'slider' ) as $slide ) { ?>
 
-            <div class="sol-slider__slide" style="background-image: url(<?php echo esc_url( $slide['image'] ); ?>);">
+            <div class="sol-slider__slide">
+                <div class="sol-slider__slide-image">
+                    <img src="<?php echo esc_url( $slide['image'] ); ?>" alt="<?php echo esc_attr( $slide['heading'] ); ?>">
+                </div>
                 <div class="sol-slider__slide-inner container sol-slider-align__<?php echo ( ! empty( $slide['align'] ) ) ? esc_attr( $slide['align'] ) : 'left'; ?>">
                     <div class="sol-slider__slide-content">
 
@@ -26,6 +29,9 @@ $attrs = get_block_wrapper_attributes( blocks::get_args( $block ) ); ?>
                         <?php endif; ?>
                         <?php if( ! empty( $slide['content'] ) ) : ?>
                             <div class="sol-slider__slide-text"><?php echo wp_kses_post( wpautop( $slide['content'] ) ); ?></div>
+                        <?php endif; ?>
+                        <?php if( ! empty( $slide['button_text'] ) && ! empty( $slide['button_url'] ) ) : ?>
+                            <a href="<?php echo esc_url( $slide['button_url'] ); ?>" class="sol-slider__slide-button"><?php echo esc_html( $slide['button_text'] ); ?></a>
                         <?php endif; ?>
 
                     </div>

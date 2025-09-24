@@ -6,12 +6,8 @@
  *
  * @package test
  */
+if( ! is_active_sidebar( 'primary-sidebar' ) ) return; ?>
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-	return;
-}
-?>
-
-<aside id="secondary" class="widget-area">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+<aside id="secondary" class="widget-area has-dark-grey-background-color has-background">
+	<?php dynamic_sidebar( 'primary-sidebar' ); ?>
 </aside><!-- #secondary -->
