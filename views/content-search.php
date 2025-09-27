@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying results in search pages
+ * Template part for displaying posts
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -8,28 +8,22 @@
  */
 
 ?>
+<a href="<?php echo get_permalink(); ?>">
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<div class="entry-content"><?php
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+			// Title.
+			the_title( '<h1 class="entry-title">', '</h1>' );
 
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php
-			test_posted_on();
-			test_posted_by();
-			?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
+			// Author.
+			echo '<p class="entry-author">By ' . get_the_author() . '</p>';
 
-	<?php test_post_thumbnail(); ?>
+			// Content.
+			echo '<p class="entry-excerpt">' . get_the_excerpt() . '</p>';
+			
+			// Read More. ?>
+			<span class="thedean-read-more">Read More</span>
 
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
-
-	<footer class="entry-footer">
-		<?php test_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+		</div>
+	</article>
+</a>

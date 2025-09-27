@@ -135,3 +135,8 @@
 			</div>
 		</div>
 	</header><!-- #masthead -->
+	<div class="header__searchform">
+		<div class="container">
+			<?php get_search_form(); ?>
+		</div>
+	</div>

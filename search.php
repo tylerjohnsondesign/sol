@@ -10,7 +10,8 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main container blog-container">
+		<div class="blog-posts">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -45,9 +46,12 @@ get_header();
 
 		endif;
 		?>
+		</div>
+		<div class="blog-sidebar">
+			<?php get_sidebar(); ?>
+		</div>
 
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();

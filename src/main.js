@@ -83,4 +83,11 @@ jQuery(document).ready(function($) {
         $(this).attr('aria-expanded', !expanded);
     });
 
+    // Search.
+    $('a.sol-search-btn').on('click', function(e) {
+        e.preventDefault();
+        // Toggle.
+        $('.header__searchform').toggleClass('active');
+    });
+
 });
