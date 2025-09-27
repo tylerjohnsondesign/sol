@@ -14,11 +14,6 @@
 
 
 
-
-
-
-
-
 body {
     background: #000;
     color: #fff;
@@ -167,6 +162,7 @@ body {
 }
 
 .header__inner {
+    display: none;
     position: relative;
     background-size: cover !important;
     background-position: bottom !important;
@@ -502,6 +498,182 @@ div#mobile-site-social {
     grid-gap: 10px;
 }
 
+.header__desktop {
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+
+    .header__desktop-wrapper {
+        display: block;
+        width: 1179px;
+        height: 325px;
+        position: relative;
+
+        .header__desktop-ycr {
+            width: 160px;
+            height: 50px;
+            position: absolute;
+            right: 25px;
+            bottom: 2.5px;
+        }
+    }
+
+    .header__desktop-menu {
+        width: 100%;
+
+        ul#main-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+
+            li a {
+                padding: 10px 15px;
+                display: inline-block;
+                background-image: linear-gradient(#d2d0af, #a9a566);
+                color: transparent;
+                background-clip: text;
+            }
+
+            li a:hover {
+                background-image: linear-gradient(#ffeb9a, #ffeb9a);
+                text-shadow: 0px 0px 8px rgb(255 255 255 / 75%);
+            }
+        }
+
+        ul.sub-menu {
+            display: none;
+        }
+
+        .header-nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #1c1c1c;
+            padding: 5px 0;
+        }
+    }
+
+    .header__desktop-ycr {
+        width: 160px;
+        height: 50px;
+        position: absolute;
+        right: 25px;
+        bottom: 2.5px;
+    }
+
+    a.sol-donate-btn {
+        background: #f12d12;
+        padding: 10px 15px;
+        border-radius: 25px;
+        min-width: 100px;
+        text-align: center;
+        margin: 0 15px;
+    }
+
+    a.sol-donate-btn:hover {
+        background: #ffffff;
+        color: #f12d12;
+    }
+
+    div#desktop-site-social {
+        position: absolute;
+        right: 30px;
+        bottom: 60px;
+        display: flex;
+        grid-gap: 10px;
+        align-items: center;
+    }
+
+    div#desktop-site-social a svg path {
+        fill: #d2d0af;
+    }
+
+    div#desktop-site-social a:hover svg path {
+        fill: #fff;
+    }
+
+    .listen-live-gcn a {
+        display: flex;
+        align-items: center;
+        grid-gap: 7.5px;
+        padding: 15px;
+    }
+
+    .listen-live-gcn {
+        width: 173px;
+        text-align: center;
+        background: #f12d12;
+        border-radius: 4px 0 0 4px;
+        position: absolute;
+        right: 14px;
+        bottom: 110px;
+        font-size: 14px;
+        box-shadow: 4px 2px 5px #000;
+    }
+
+    .listen-live-gcn a svg path {
+        fill: #fff;
+    }
+
+    .listen-live-gcn a:hover svg path {
+        fill: #000;
+    }
+
+    .listen-live-gcn a:hover {
+        color: #fff;
+    }
+
+    .newsletter-signup {
+        padding: 10px 15px;
+        background: #f12d12;
+        text-transform: uppercase;
+        width: 104px;
+        font-size: 12px;
+        border-radius: 0 4px 4px 0;
+        left: 14px;
+        bottom: 15px;
+        position: absolute;
+    }
+
+    .newsletter-signup a {
+        font-weight: bold;
+    }
+
+    .newsletter-signup a:hover {
+        color: #000000;
+    }
+
+    .header__desktop-donate a.sol-donate-btn {
+        position: relative;
+        margin: 0;
+        border-radius: 4px;
+        padding-left: 75px;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    .header__desktop-donate {
+        position: absolute;
+        left: 14px;
+        bottom: 110px;
+    }
+
+    .header__desktop-donate a.sol-donate-btn img {
+        position: absolute;
+        top: -18px;
+        left: -10px;
+    }
+
+    .header__desktop-donate a.sol-donate-btn span {
+        font-weight: bold;
+    }
+
+}
+
 footer#colophon {
     background-size: cover !important;
 
@@ -584,6 +756,18 @@ footer#colophon {
 
     .sol-endorsement-images {
         grid: auto-flow dense / repeat(6, 1fr);
+    }
+
+}
+
+@media screen and (max-width:1179px) {
+
+    .header__inner {
+        display: block;
+    }
+
+    .header__desktop {
+        display: none;
     }
 
 }

@@ -79,6 +79,10 @@
     .sol-slider__slide-text {
         font-size: clamp(16px, 5vw, 20px);
         text-shadow: 2px 2px 6px #000;
+
+        h2 {
+            font-size: clamp(20px,6vw,1.5em);
+        }
     }
 
     .sol-slider__slide-content {
